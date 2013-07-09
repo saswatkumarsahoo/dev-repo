@@ -1,0 +1,29 @@
+{
+ "mysql": {
+        "server_root_password": "password",
+        "server_repl_password": "password",
+        "server_debian_password": "password"
+    },
+    "database": {
+        "users": [
+            {
+                "username":"development",
+                "password":"password",
+                "superuser": "true"
+            }
+        ]
+    },
+    "java": {
+        "install_flavor": "oracle",
+        "oracle": {
+            "accept_oracle_download_terms": true
+        }
+    },
+    "run_list": [
+        "recipe[build-essential]",
+        "recipe[java]",
+		"recipe[mysql::server]",
+        "recipe[main]",
+        "recipe[main::grails]"
+    ]
+}

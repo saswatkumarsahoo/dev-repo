@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+# Install Cookbooks by typing `librarian-chef install`
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'build-essential'
+cookbook 'imagemagick'
+cookbook 'java'
+cookbook 'database'
+cookbook 'nodejs'
+
+cookbook "main",
+         :path => "vendor/cookbooks/main"
+
+
+# cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+
+# cookbook 'rvm',
+#   :git => 'https://github.com/fnichol/chef-rvm'
+
+# cookbook 'postgresql',
+#   :git => 'https://github.com/findsyou/cookbooks',
+#   :ref => 'postgresql-improvements'
