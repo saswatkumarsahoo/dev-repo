@@ -33,4 +33,4 @@ rvm use 1.9.3 --default
 #sudo gem install chef ruby-shadow --no-ri --no-rdoc
 
 # Clone Chef repo
-sudo git clone https://github.com/pmoghaddam/rails-chef-repo.git /var/chef
+sudo git clone https://github.com/saswatkumarsahoo/dev-repo.git /var/chef
